@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEMATIKA DISKRIT</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.css">   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="judul">
+        <h2><span class="aqua1">Permutasi</span></h2>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dapus.html">Pustaka</a></li>
+        <li><a href="#">Members</a></li>
+    </ul>
+  </nav>
+
+  <!-- Konten -->
+  <div class="container-pk">
+    <p>
+      <h2>1. Konsep Permutasi</h2>
+      <p>Permutasi adalah menggabungkan beberapa objek dari suatu grup dengan memperhatikan urutan. 
+         Di dalam permutasi, urutan diperhatikan. Rumus permutasi adalah sebagai berikut:</p>
+      <!-- Rumus dengan KaTeX -->
+      <p class="math">$$ P(n,k) = \frac{n!}{(n-k)!} $$</p>
+      Di mana n! (n faktorial) adalah hasil kali dari semua bilangan bulat positif dari 1 hingga n.
+    Contoh:
+    Jika kita memiliki 5 buah buku dan ingin mengaturnya dalam urutan tertentu, maka permutasi
+    dari 5 buku diambil 3 buku adalah:
+    <p class="math">
+        $$ 
+        P(5,3) = \frac{5!}{(5-3)!} = \frac{5!}{2!} = \frac{5 \times 4 \times 3 \times 2 \times 1!}{2 \times 1!} = 60
+        $$
+        Jadi, ada 60 cara untuk mengatur 3 buku dari 5 buku tersebut dalam urutan tertentu
+      </p>
+    </p>
+      <!-- Tombol Back -->
+  <button class="btn back-btn" onclick="location.href='index.html'">Kembali</button>
+  <button class="btn next" onclick="location.href='permutasi2.html'">Lanjut</button>
+  </div>
+
+
+
+  <!-- KaTeX JS -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+
+</body>
+</html>

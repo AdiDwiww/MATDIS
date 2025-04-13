@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEMATIKA DISKRIT</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.css">   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="judul">
+        <h2><span class="aqua1">Permutasi</span></h2>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dapus.html">Pustaka</a></li>
+        <li><a href="#">Members</a></li>
+    </ul>
+  </nav>
+
+  <!-- Konten -->
+  <div class="container-pk">
+      <p>
+        <h2>4. Permutasi Berulang </h2>
+<p>
+Jika sebuah kata terdiri dari 2 huruf yang disusun dari huruf A, B, dan C, serta kata yang 
+terbentuk boleh mengandung huruf yang sama, maka diperoleh kata-kata seperti:
+</p>
+
+<p>
+AA, AB, AC, BB, BA, BC, CC, CA, CB
+</p>
+
+<p>
+Jadi, banyaknya permutasi dua huruf yang diambil dari tiga huruf, dengan huruf-huruf itu 
+boleh berulang, seluruhnya ada <strong>9 cara</strong>.
+</p>
+
+<p>
+Diperoleh kesimpulan bahwa banyaknya permutasi <i>r</i> unsur yang diambil dari <i>n</i> unsur 
+yang tersedia (dengan tiap unsur boleh berulang) adalah:
+</p>
+
+<p class="math">
+$$
+P_{\text{berulang}} = n^r \quad \text{dengan } r < n
+$$
+</p>
+
+<h4>Contoh:</h4>
+<p>
+Berapa banyak bilangan terdiri dari 2 angka yang dapat disusun dari angka-angka 3, 4, dan 5, 
+jika angka-angka yang tersedia boleh ditulis ulang?
+</p>
+
+<h4>Penyelesaian:</h4>
+
+<p class="math">
+$$
+P_{\text{berulang}} = n^r = 3^2 = 9
+$$
+</p>
+
+<p>
+Jadi, banyak bilangan yang tersusun adalah <strong>9</strong>.
+</p>
+
+    </p>
+      <!-- Tombol Back -->
+  <button class="btn back-btn" onclick="location.href='permutasi6.html'">Kembali</button>
+  </div>
+
+
+
+  <!-- KaTeX JS -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+
+</body>
+</html>

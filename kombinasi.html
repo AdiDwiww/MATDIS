@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEMATIKA DISKRIT</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.css">   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="judul">
+        <h2><span class="aqua1">Kombinasi</span></h2>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dapus.html">Pustaka</a></li>
+        <li><a href="#">Members</a></li>
+    </ul>
+  </nav>
+
+  <!-- Konten -->
+  <div class="container-pk">
+    <p>
+        <h2>1. Konsep Kombinasi</h2>
+<p>
+Kombinasi merupakan banyaknya cara memilih anggota dalam jumlah tertentu dari 
+anggota-anggota suatu himpunan. Kombinasi juga bisa diartikan sebagai banyaknya cara 
+membuat himpunan bagian dengan jumlah anggota tertentu dari anggota-anggota suatu 
+himpunan.
+</p>
+<br>
+<p>
+Dengan kata lain, kombinasi adalah susunan dari sekelompok objek <strong>tanpa memperhatikan urutannya</strong>. 
+Kombinasi dapat disebut sebagai pengelompokan sejumlah unsur.
+</p>
+<br>
+<p>
+Sebagai contoh, dalam kombinasi: <code>ABC</code>, <code>ACB</code>, <code>BCA</code>, <code>CAB</code>, <code>CBA</code>, dan <code>BAC</code> dianggap <strong>sama</strong>, karena semua hanya berbeda urutan.
+</p>
+<br>
+<p>
+Misalkan suatu himpunan memiliki anggota sebanyak <i>n</i>, maka pemilihan <i>r</i> buah anggota dinamakan 
+kombinasi <i>r</i> dari <i>n</i>, ditulis sebagai <code>C(n, r)</code> atau <code>nCr</code>, dengan syarat <code>r ≤ n</code>. 
+Rumus kombinasi dinyatakan sebagai:
+</p>
+<br>
+<p class="math">
+$$
+C(n, r) = \frac{n!}{r!(n - r)!}
+$$
+</p>    
+    </p>
+      <!-- Tombol Back -->
+  <button class="btn back-btn" onclick="location.href='index.html'">Kembali</button>
+  <button class="btn next" onclick="location.href='Kombinasi2.html'">Lanjut</button>
+  </div>
+
+
+
+  <!-- KaTeX JS -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+
+</body>
+</html>

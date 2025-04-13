@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEMATIKA DISKRIT</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.css">   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="judul">
+        <h2><span class="aqua1">Permutasi</span></h2>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dapus.html">Pustaka</a></li>
+        <li><a href="#">Members</a></li>
+    </ul>
+  </nav>
+
+  <!-- Konten -->
+  <div class="container-pk">
+      <h2>b. Permutasi memuat beberapa unsur sama</h2>
+      <p>
+        Pada pembahasan sebelumnya, kita telah mempelajari permutasi dari unsur-unsur yang
+        berbeda. Kemudian, pada bagian ini kita akan mempelajari permutasi dengan beberapa
+        unsur yang sama.
+        Secara umum konsep permutasi mempunyai aturan sebagai berikut
+        <br><br>
+        1. Jika dari n unsur yang tersedia terdapat k unsur yang sama dengan na k, maka
+        banyak permutasi dari n unsur adalah sebagai berikut.:</p>
+      <!-- Rumus dengan KaTeX -->
+      <p class="math">
+        $$
+        P = \frac{n!}{k!}
+        $$
+    </p>
+    2. Jika dari n unsur yang tersedia terdapat k unsur yang sama, l unsur yang sama,
+    dan m unsur yang sama dengan k + l + m n maka berikut banyak permutasi
+     dari n unsur tersebut.(P = n!k! l! m!)
+     <p class="math">
+        $$
+        P = \frac{n!}{k! \times l! \times m!}
+        $$
+    </p>
+    </p>
+      <!-- Tombol Back -->
+  <button class="btn back-btn" onclick="location.href='permutasi3.html'">Kembali</button>
+  <button class="btn next" onclick="location.href='permutasi5.html'">Lanjut</button>
+  </div>
+
+
+
+  <!-- KaTeX JS -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+
+</body>
+</html>

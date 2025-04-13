@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEMATIKA DISKRIT</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.css">   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="judul">
+        <h2><span class="aqua1">Kombinasi</span></h2>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dapus.html">Pustaka</a></li>
+        <li><a href="#">Members</a></li>
+    </ul>
+  </nav>
+
+  <!-- Konten -->
+  <div class="container-pk">
+    <p>
+<h4>contoh</h4>
+Diketahui dari 10 orang yang mendaftar karyawan di suatu perusahaan, hanya akan diterima 4 orang sebagai karyawan. Tentukan banyak cara untuk memilih ke-6 orang itu!
+<h4>Penyelesaian:</h4>
+Pada kasus ini urutan orang yang diterima sebagai karyawan tidak diperhatikan. Jadi, kasus ini dapat diartikan sebagai kombinasi 4 unsur dari 10 unsur yang tersedia.
+
+<p class="math">
+  $$
+  \binom{10}{4} = \frac{10!}{(10-4)!4!} = \frac{10!}{6!4!} = \frac{10 \times 9 \times 8 \times 7 \times 6!}{6! \times 4 \times 3 \times 2 \times 1} = 210
+  $$
+</p>
+Jadi, terdapat <strong>210 </strong>cara.
+
+</p>
+
+      <!-- Tombol Back -->
+  <button class="btn back-btn" onclick="location.href='kombinasi7.html'">Kembali</button>
+  <button class="btn next" onclick="location.href='Kombinasi9.html'">Lanjut</button>
+  </div>
+
+
+
+  <!-- KaTeX JS -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+
+</body>
+</html>

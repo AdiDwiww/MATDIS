@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEMATIKA DISKRIT</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.css">   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="judul">
+        <h2><span class="aqua1">Permutasi</span></h2>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dapus.html">Pustaka</a></li>
+        <li><a href="#">Members</a></li>
+    </ul>
+  </nav>
+
+  <!-- Konten -->
+  <div class="container-pk">
+      <h2>2. Kaidah Permutasi</h2>
+      <p>Permutasi dibedakan menjadi 4 macam, yaitu :
+        <h2>a. Permutasi dari unsur unsur yang berbeda</h2>
+        Secara umum, banyak cara menempatkan n buah unsur ke dalam k tempat yang
+        tersedia, hal tersebut disebut dengan permutasi k unsur dari n unsur, yang dinotasikan:</p>
+      <!-- Rumus dengan KaTeX -->
+      <p class="math">
+        $$
+        P_k^n = n \times (n - 1) \times (n - 2) \times \dots \times (n - k + 1)
+        $$
+      </p>
+      
+      <p class="math">
+        $$
+        P_k^n = \frac{n!}{(n - k)!}
+        $$
+      </p>
+      Dengan k n, notasi untuk permutasi biasannya <p class="math">
+        $$
+        P_k^n \quad \text{atau} \quad {}^nP_k \quad \text{atau} \quad P(n,k)
+        $$
+      </p>
+      Khusus untuk k = n diperoleh P(n,n) = <p class="math">
+        $$
+        P(n,n) = \frac{n!}{(n - n)!} = \frac{n!}{0!} = n!
+        $$
+      </p>
+    </p>
+      <!-- Tombol Back -->
+  <button class="btn back-btn" onclick="location.href='permutasi.html'">Kembali</button>
+  <button class="btn next" onclick="location.href='permutasi3.html'">Lanjut</button>
+  </div>
+
+
+
+  <!-- KaTeX JS -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+
+</body>
+</html>

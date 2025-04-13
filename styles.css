@@ -1,0 +1,156 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 150px;
+    font-weight: 800;    
+}
+
+.aqua1 {
+    color: #00c7cd;
+}
+.aqua {
+    color: #00c7cd;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+     
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin-left: 25px;
+    color: black;
+    font-weight: 530;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 35px 80px 20px 150px;
+    gap: 0px;
+    position: relative;
+    min-height: 100vh; 
+    padding-bottom: 60px; 
+}
+
+.container-pk{
+    padding: 35px 150px 20px 150px;
+    
+    
+}
+
+.content {
+    max-width: 600px;
+    font-size: 20px;
+    padding-right: 100px;
+    margin-top: -50px;
+}
+
+.line {
+    width: 10px;
+    height: 0; /* Mulai dari 0 */
+    background-color: #00c7cd;
+    margin-right: 10px;
+    animation: slideUp 1.5s infinite alternate ease-in-out;
+    border-radius: 25px;
+}
+
+@keyframes slideUp {
+    0% {
+        height: 20px;
+    }
+    100% {
+        height: 120px;
+    }
+}
+
+.btn-container {
+    display: flex;
+    gap: 15px; /* Jarak antara tombol */
+}
+
+.btn {
+    background-color: #00c7cd;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 3px 3px 8px #00c7cd;
+    border: #00c7cd;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+    box-shadow: 7px 7px 15px rgba(0, 123, 255, 0.6); /* Shadow lebih intens saat hover */
+    transform: translateY(-3px); /* Sedikit naik saat hover */
+}
+
+.back-btn{
+    position: absolute;
+    bottom: 5%;
+}
+
+.next{
+    position: absolute;
+    bottom: 5%;
+    right: 150px;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px; /* Ukuran lingkaran */
+    height: 450px;
+    background-color: rgba(0, 199, 205, 0.2); /* Warna lingkaran transparan */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Agar lingkaran ada di belakang gambar */
+}
+
+.container img {
+    width: 500px;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+.pyramid {
+    text-align: center;
+    font-family: monospace;
+  }
+
+  .description {
+    font-family: monospace;
+    text-align: center;
+    letter-spacing: 5px; /* Untuk memberi jarak antar angka */
+  }
+
+  .line {
+    margin-bottom: 10px; /* Memberikan jarak antar baris */
+  }
+
+  .description p {
+    margin: 0;
+  }

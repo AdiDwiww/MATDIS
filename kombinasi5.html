@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEMATIKA DISKRIT</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.css">   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="judul">
+        <h2><span class="aqua1">Kombinasi</span></h2>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dapus.html">Pustaka</a></li>
+        <li><a href="#">Members</a></li>
+    </ul>
+  </nav>
+
+  <!-- Konten -->
+  <div class="container-pk">
+    <p>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Macam Kombinasi</th>
+                <th>Elemen Kombinasi Dipermutasikan</th>
+                <th>Banyak Permutasi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>ABC</td><td>ABC, ACB, BAC, BCA, CAB, CBA</td><td>3!</td></tr>
+              <tr><td>ABD</td><td>ABD, ADB, BAD, BDA, DAB, DBA</td><td>3!</td></tr>
+              <tr><td>ABE</td><td>ABE, AEB, BAE, BEA, EAB, EBA</td><td>3!</td></tr>
+              <tr><td>ACD</td><td>ACD, ADC, CAD, CDA, DAC, DCA</td><td>3!</td></tr>
+              <tr><td>ACE</td><td>ACE, AEC, CAE, CEA, EAC, ECA</td><td>3!</td></tr>
+              <tr><td>ADE</td><td>ADE, AED, DAE, DEA, EAD, EDA</td><td>3!</td></tr>
+              <tr><td>BCD</td><td>BCD, BDC, CBD, CDB, DBC, DCB</td><td>3!</td></tr>
+              <tr><td>BCE</td><td>BCE, BEC, CBE, CEB, EBC, ECB</td><td>3!</td></tr>
+              <tr><td>BDE</td><td>BDE, BED, DBE, DEB, EBD, EDB</td><td>3!</td></tr>
+              <tr><td>CDE</td><td>CDE, CED, DCE, DEC, ECD, EDC</td><td>3!</td></tr>
+              <tr>
+                <td colspan="2"><strong>Total</strong></td>
+                <td><strong>10 × 3! = 60</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="math">
+            $$ P(5, 3) = 5 \times 4 \times 3 = 10 \times 3! = C(5, 3) \times 3! $$
+          </p>
+                    
+    </p>
+      <!-- Tombol Back -->
+  <button class="btn back-btn" onclick="location.href='kombinasi4.html'">Kembali</button>
+  <button class="btn next" onclick="location.href='Kombinasi6.html'">Lanjut</button>
+  </div>
+
+
+
+  <!-- KaTeX JS -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+
+</body>
+</html>

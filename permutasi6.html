@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEMATIKA DISKRIT</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.css">   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="judul">
+        <h2><span class="aqua1">Permutasi</span></h2>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dapus.html">Pustaka</a></li>
+        <li><a href="#">Members</a></li>
+    </ul>
+  </nav>
+
+  <!-- Konten -->
+  <div class="container-pk">
+      <p>
+        <h4>Penyelesaian:</h4>
+<p>1. AMBAL</p>
+<p>Unsur yang tersedia, n = 5.</p>
+<p>Unsur yang sama, k = 2, yaitu huruf A ada 2.</p>
+
+<p class="math">
+  $$
+  P = \frac{5!}{2!}
+  $$
+</p>
+<p class="math">
+  $$
+  P = \frac{5 \times 4 \times 3 \times 2!}{2!}
+  $$
+</p>
+<p class="math">
+  $$
+  P = 5 \times 4 \times 3 = 60
+  $$
+</p>
+<p>Jadi, banyaknya susunan huruf yang terbentuk adalah <strong>60</strong>.</p>
+
+    </p>
+      <!-- Tombol Back -->
+  <button class="btn back-btn" onclick="location.href='permutasi5.html'">Kembali</button>
+  <button class="btn next" onclick="location.href='permutasi7.html'">Lanjut</button>
+  </div>
+
+
+
+  <!-- KaTeX JS -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+
+</body>
+</html>

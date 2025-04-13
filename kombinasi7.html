@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEMATIKA DISKRIT</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.css">   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="judul">
+        <h2><span class="aqua1">Kombinasi</span></h2>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dapus.html">Pustaka</a></li>
+        <li><a href="#">Members</a></li>
+    </ul>
+  </nav>
+
+  <!-- Konten -->
+  <div class="container-pk">
+    <p>
+        <p><strong>b. Kombinasi</strong></p>
+        <ul>
+          <li>Arman - Bintoro</li>
+          <li>Arman - Ceril</li>
+          <li>Bintoro - Ceril</li>
+        </ul>
+
+        <p>= 3 karena <em>urutan tidak diperhatikan</em></p>
+Diperoleh kombinasi:
+<p class="math">
+  $$
+  \binom{3}{2} = \frac{3!}{2!(3-2)!} = 3
+  $$
+</p>
+
+Jika kombinasi dari 3 unsur diambil 2 unsur ditulis:
+<p class="math">
+  $$
+  \binom{3}{2} = P(3, 2) = \frac{3!}{2!(3-2)!}
+  $$
+</p>
+
+Secara umum dapat disimpulkan bahwa:
+Banyaknya kombinasi dari \( n \) unsur yang berbeda dengan setiap pengambilan dengan \( r \) unsur ditulis \( C^n_r \), \( \binom{n}{r} \), atau \( C(n,r) \) adalah:
+<p class="math">
+  $$
+  \binom{n}{r} = \frac{n!}{(n - r)! \cdot r!}
+  $$
+</p>
+
+      <!-- Tombol Back -->
+  <button class="btn back-btn" onclick="location.href='kombinasi6.html'">Kembali</button>
+  <button class="btn next" onclick="location.href='Kombinasi8.html'">Lanjut</button>
+  </div>
+
+
+
+  <!-- KaTeX JS -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+
+</body>
+</html>

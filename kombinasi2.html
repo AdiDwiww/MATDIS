@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEMATIKA DISKRIT</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.css">   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="judul">
+        <h2><span class="aqua1">Kombinasi</span></h2>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dapus.html">Pustaka</a></li>
+        <li><a href="#">Members</a></li>
+    </ul>
+  </nav>
+
+  <!-- Konten -->
+  <div class="container-pk">
+    <p>
+        <h3>Contoh Soal:</h3>
+
+        <p>
+        Terdapat 10 orang yang belum saling mengenal. Agar mereka saling mengenal, mereka harus berjabat tangan. 
+        Berapa banyak jabat tangan yang terjadi?
+        </p>
+        
+        <br>
+        
+        <p><strong>Penyelesaian:</strong></p>
+        
+        <p>
+        Jumlah orang (<i>n</i>) = 10 <br>
+        Jumlah orang yang berjabat tangan tiap pasang (<i>r</i>) = 2
+        </p>
+        
+        <br>
+        
+        <p>
+        Gunakan rumus kombinasi:
+        </p>
+        
+        <p class="math">
+        $$
+        C(n, r) = \frac{n!}{r!(n - r)!}
+        $$
+        </p>
+        
+        <p class="math">
+        $$
+        C(10, 2) = \frac{10!}{2!(10-2)!} = \frac{10 \times 9 \times 8!}{2 \times 1 \times 8!} = \frac{90}{2} = 45
+        $$
+        </p>
+        
+        <p>
+        Jadi, banyak jabat tangan yang terjadi adalah <strong>45 jabat tangan</strong>.
+        </p>
+        
+    </p>
+      <!-- Tombol Back -->
+  <button class="btn back-btn" onclick="location.href='kombinasi.html'">Kembali</button>
+  <button class="btn next" onclick="location.href='Kombinasi3.html'">Lanjut</button>
+  </div>
+
+
+
+  <!-- KaTeX JS -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+
+</body>
+</html>
